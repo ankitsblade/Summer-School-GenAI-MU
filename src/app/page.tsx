@@ -1,5 +1,4 @@
 "use client"
-/* eslint-disable */
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
@@ -91,7 +90,6 @@ function useParallax(speed = 0.1) {
 
 export default function Home() {
   const heroParallax = useParallax(0.15);
-  const gridParallax = useParallax(0.05);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Close mobile menu when clicking anywhere else
@@ -763,7 +761,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <p className="text-sm text-gray-300">jane.doe@mahindra.edu</p>
-                  <p className="text-xs text-gray-500 mt-1">Please include "Summer School 2025" in the subject</p>
+                  <p className="text-xs text-gray-500 mt-1">Please include &quot;Summer School 2025&quot; in the subject</p>
                 </div>
               </div>
               
