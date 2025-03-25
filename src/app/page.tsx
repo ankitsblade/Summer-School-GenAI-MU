@@ -12,7 +12,6 @@ function SimpleImageCarousel() {
     "/ai-image-3.jpg",
     "/arnab6.jpg",
   ];
-  
   const [currentImage, setCurrentImage] = useState(0);
   
   // Auto-rotate images
@@ -564,7 +563,7 @@ export default function Home() {
           role: "Assistant Professor",
           affiliation: "IIIT Allahabad",
           website: "https://it.iiita.ac.in/?pg=facultypage&uid=srdubey",
-          image: "/srdubey.jpg"
+          image: "./srdubey.jpg"
         },
         {
           name: "Dhiraj Madaan",
