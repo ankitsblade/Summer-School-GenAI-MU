@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 // Simple image carousel component
 function SimpleImageCarousel() {
   const images = [
-    "/Summer-School-GenAI-MU/arnab6.jpg",
-    "/Summer-School-GenAI-MU/ai-image-2.jpg",
-    "/Summer-School-GenAI-MU/ai-image-3.jpg",
-    "/Summer-School-GenAI-MU/arnab6.jpg",
+    "/Summer-School-GenAI-MU/Frame 795.png",
+    "/Summer-School-GenAI-MU/Frame 795(1).png",
+    "/Summer-School-GenAI-MU/Frame 795 (2).png",
+    "/Summer-School-GenAI-MU/Frame 795 (3).png",
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -682,122 +682,98 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer Section - Updated with Professor Contact */}
-      <footer id="footer" className="bg-gray-800 border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-            {/* Updated Logo/Title */}
-            <div className="mb-6 md:mb-0">
-              <span className="font-bold text-sm sm:text-base md:text-lg text-teal-400 leading-tight">
-                Generative AI for Image Processing <br className="hidden sm:block" />& Healthcare
-              </span>
-            </div>
-
-            {/* Quick Links */}
-            <div className="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-              <a href="#about" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                About
-              </a>
-              <a href="#topics" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                Curriculum
-              </a>
-              <a href="#speakers" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                Speakers
-              </a>
-            </div>
-
-            {/* Contact Icons */}
-            <div className="flex items-center space-x-4">
-              <a href="mailto:info@aisummeracademy.edu" className="text-gray-500 hover:text-teal-400 transition-colors duration-300" aria-label="Email">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-teal-400 transition-colors duration-300" aria-label="LinkedIn">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                </svg>
-              </a>
-            </div>
+{/* Footer Section - Horizontal Contact Card */}
+<footer id="footer" className="bg-gray-800 border-t border-gray-700">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {/* Main footer content with horizontal contact card */}
+    <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+      {/* Left Column - Title */}
+      <div className="mb-6 md:mb-0 md:mr-4">
+        <span className="font-bold text-sm sm:text-base md:text-lg text-teal-400 leading-tight">
+          Generative AI for Image Processing <br className="hidden sm:block" />& Healthcare
+        </span>
+      </div>
+      
+      {/* Right Column - Horizontal Contact Card */}
+      <div className="flex items-center bg-gray-800/80 px-4 py-2 rounded-lg border border-gray-700 shadow-md hover:border-teal-500/30 transition-all duration-300">
+        {/* Image container - Now Linked */}
+        <a 
+          href="https://www.mahindrauniversity.edu.in/faculty/dipti-mishra/"
+          target="_blank"
+          rel="noopener noreferrer" 
+          className="h-10 w-10 relative rounded-lg overflow-hidden border border-gray-700 mr-3 hover:border-teal-400 transition-all duration-300"
+        >
+          <Image 
+            src="/Summer-School-GenAI-MU/dipti 1.png" 
+            alt="Dr. Dipti Mishra" 
+            fill 
+            className="object-cover object-top"
+            sizes="40px"
+          />
+        </a>
+        
+        {/* Contact info */}
+        <div className="flex flex-col sm:flex-row sm:items-center">
+          <div className="mr-4">
+            {/* Name - Now Linked */}
+            <a 
+              href="https://www.mahindrauniversity.edu.in/faculty/dipti-mishra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white font-medium hover:text-teal-400 transition-colors duration-300"
+            >
+              Dr. Dipti Mishra
+            </a>
           </div>
-
-          {/* Professor Contact Card - NEW SECTION */}
-          <div className="border-t border-gray-700/30 pt-8 mb-8">
-            <h3 className="text-center text-xl font-semibold text-white mb-6">Contact Coordinator</h3>
-
-            <div className="max-w-2xl mx-auto bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-lg">
-              <div className="flex flex-col sm:flex-row">
-                {/* Professor Image Placeholder */}
-                <div className="sm:w-1/3 bg-gray-700">
-                  <div className="h-full w-full relative min-h-[180px]">
-                    {/* Replace this with actual Image component when you have the photo */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="h-32 w-32 rounded-full bg-gray-600 flex items-center justify-center">
-                        <svg className="w-20 h-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path>
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Comment guide for adding real image */}
-                    <div className="absolute bottom-2 left-0 right-0 text-center">
-                      <span className="text-xs text-gray-500">Add professor photo here</span>
-                      <span className="block text-xs text-gray-500">(Recommended: 400px × 400px)</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Professor Contact Info */}
-                <div className="sm:w-2/3 p-6">
-                  <h4 className="text-lg font-semibold text-white">Dr. Jane Doe</h4>
-                  <p className="text-teal-400 text-sm mb-4">Associate Professor, Department of Computer Science</p>
-
-                  <div className="space-y-3">
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 text-teal-400 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                      </svg>
-                      <div>
-                        <p className="text-sm text-gray-300">jane.doe@mahindra.edu</p>
-                        <p className="text-xs text-gray-500 mt-1">Please include &quot;Summer School 2025&quot; in the subject</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start">
-                      <svg className="w-5 h-5 text-teal-400 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                      </svg>
-                      <div>
-                        <p className="text-sm text-gray-300">+91 98765 43210</p>
-                        <p className="text-xs text-gray-500 mt-1">Available Mon-Fri, 9:00 AM - 5:00 PM IST</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Divider & Copyright */}
-          <div className="border-t border-gray-700/30 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-sm text-gray-400 mb-4 md:mb-0">
-                &copy; {new Date().getFullYear()} Mahindra University. All rights reserved.
-              </p>
-              <div className="text-xs text-gray-500">
-                May 7-9, 2025 • Hyderabad, India
-              </div>
-            </div>
-
-            {/* Credit line */}
-            <div className="text-center mt-6">
-              <p className="text-xs text-gray-500">
-                Designed with <span className="text-teal-400">❤</span> by Mahindra University Web Team
-              </p>
-            </div>
+          
+          <div className="mt-1 sm:mt-0 border-t sm:border-t-0 sm:border-l border-gray-700 sm:pl-4 pt-1 sm:pt-0">
+            <a 
+              href="mailto:dipti.mishra@mahindrauniversity.edu.in" 
+              className="flex items-center text-sm text-teal-400 hover:text-teal-300 transition-colors"
+            >
+              <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Email
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+    
+    {/* Quick Links */}
+    <div className="flex justify-center space-x-8 mb-8">
+      <a href="#about" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
+        About
+      </a>
+      <a href="#topics" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
+        Curriculum
+      </a>
+      <a href="#speakers" className="text-sm text-gray-400 hover:text-teal-400 transition-colors duration-300">
+        Speakers
+      </a>
+    </div>
+
+    {/* Divider & Copyright */}
+    <div className="border-t border-gray-700/30 pt-8">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm text-gray-400 mb-4 md:mb-0">
+          &copy; {new Date().getFullYear()} Mahindra University. All rights reserved.
+        </p>
+        <div className="text-xs text-gray-500">
+          May 7-9, 2025 • Hyderabad, India
+        </div>
+      </div>
+
+      {/* Credit line */}
+      <div className="text-center mt-6">
+        <p className="text-xs text-gray-500">
+          Designed with <span className="text-teal-400">❤</span> by Mahindra University Web Team
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
