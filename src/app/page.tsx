@@ -143,8 +143,6 @@ export default function Home() {
                 )}
               </button>
             </div>
-
-            {/* Desktop menu */}
             {/* Desktop menu */}
 <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
   <Link href="#about" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
