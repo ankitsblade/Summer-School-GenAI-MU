@@ -145,70 +145,81 @@ export default function Home() {
             </div>
 
             {/* Desktop menu */}
-            <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
-              <Link href="#about" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
-                About
-              </Link>
-              <Link href="#topics" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
-                Curriculum
-              </Link>
-              <Link href="#speakers" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
-                Speakers
-              </Link>
-              <Link
-                href="#footer"
-                className="px-4 py-2 rounded-md bg-teal-500/20 text-sm font-medium text-teal-400 hover:bg-teal-500/30 border border-teal-500/30 transition-all duration-300"
-              >
-                <span className="flex items-center">
-                  <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                  Contact Us
-                </span>
-              </Link>
-            </div>
+            {/* Desktop menu */}
+<div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
+  <Link href="#about" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
+    About
+  </Link>
+  <Link href="#topics" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
+    Curriculum
+  </Link>
+  <Link href="#speakers" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
+    Speakers
+  </Link>
+  <Link href="#directions" className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
+    How to Reach
+  </Link>
+  <Link
+    href="#footer"
+    className="px-4 py-2 rounded-md bg-teal-500/20 text-sm font-medium text-teal-400 hover:bg-teal-500/30 border border-teal-500/30 transition-all duration-300"
+  >
+    <span className="flex items-center">
+      <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+      </svg>
+      Contact Us
+    </span>
+  </Link>
+</div>
           </div>
         </div>
         {/* Contact Us button with visual emphasis */}
 
-        {/* Mobile menu, show/hide based on menu state */}
-        <div className={`${mobileMenuOpen ? 'block' : 'hidden'} sm:hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-700">
-            <Link
-              href="#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-            >
-              About
-            </Link>
-            <Link
-              href="#topics"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-            >
-              Curriculum
-            </Link>
-            <Link
-              href="#speakers"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-            >
-              Speakers
-            </Link>
-            <Link
-              href="#footer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 mt-2 rounded-md text-base font-medium text-teal-400 border border-teal-500/30 bg-teal-500/10 hover:bg-teal-500/20"
-            >
-              <div className="flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                Contact Us
-              </div>
-            </Link>
-          </div>
-        </div>
+ {/* Mobile menu, show/hide based on menu state */}
+<div className={`${mobileMenuOpen ? 'block' : 'hidden'} sm:hidden`}>
+  <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-700">
+    <Link
+      href="#about"
+      onClick={() => setMobileMenuOpen(false)}
+      className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    >
+      About
+    </Link>
+    <Link
+      href="#topics"
+      onClick={() => setMobileMenuOpen(false)}
+      className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    >
+      Curriculum
+    </Link>
+    <Link
+      href="#speakers"
+      onClick={() => setMobileMenuOpen(false)}
+      className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    >
+      Speakers
+    </Link>
+    <Link
+      href="#directions"
+      onClick={() => setMobileMenuOpen(false)}
+      className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
+    >
+      How to Reach
+    </Link>
+    <Link
+      href="#footer"
+      onClick={() => setMobileMenuOpen(false)}
+      className="block px-3 py-2 mt-2 rounded-md text-base font-medium text-teal-400 border border-teal-500/30 bg-teal-500/10 hover:bg-teal-500/20"
+    >
+      <div className="flex items-center">
+        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        Contact Us
+      </div>
+    </Link>
+  </div>
+</div>
       </nav>
 
       {/* Hero Section */}
