@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 // Simple image carousel component
 function SimpleImageCarousel() {
   const images = [
-    "/Summer-School-GenAI-MU/Frame 795.png",
-    "/Summer-School-GenAI-MU/Frame 795(1).png",
-    "/Summer-School-GenAI-MU/Frame 795 (2).png",
-    "/Summer-School-GenAI-MU/Frame 795 (3).png",
+    "/Summer-School-GenAI-MU/1",
+    "/Summer-School-GenAI-MU/11",
+    "/Summer-School-GenAI-MU/111",
+    "/Summer-School-GenAI-MU/1111",
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
