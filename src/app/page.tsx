@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 // Simple image carousel component
 function SimpleImageCarousel() {
   const images = [
-    "/Summer-School-GenAI-MU/1",
-    "/Summer-School-GenAI-MU/11",
-    "/Summer-School-GenAI-MU/111",
-    "/Summer-School-GenAI-MU/1111",
+    "/Summer-School-GenAI-MU/1.png",
+    "/Summer-School-GenAI-MU/11.png",
+    "/Summer-School-GenAI-MU/111.png",
+    "/Summer-School-GenAI-MU/1111.png",
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -682,6 +682,220 @@ export default function Home() {
         </div>
       </section>
 
+    {/* How to Reach Section */}
+<section id="directions" className="py-24 bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    {/* Section title with animation */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">How to Reach</h2>
+      <div className="w-24 h-1 mx-auto rounded-full bg-teal-400"></div>
+      <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+        Plan your visit to Mahindra University with these transportation options and directions.
+      </p>
+    </motion.div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      {/* Left column - Venue Information */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="p-8 rounded-lg bg-gray-800 border border-gray-700">
+          <h3 className="text-2xl font-semibold mb-6 text-white">Campus Location</h3>
+          
+          {/* Address Card */}
+          <div className="mb-8 bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-lg border-l-4 border-teal-400">
+            <h4 className="text-lg text-white font-medium mb-4 flex items-center">
+              <svg className="w-5 h-5 mr-2 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+              </svg>
+              Venue Address
+            </h4>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Mahindra University<br />
+              Survey: 62/1A, Bahadurpally (Near Tech Mahindra)<br />
+              Jeedimetla, Hyderabad, Telangana, India<br />
+              PIN: 500043
+            </p>
+          </div>
+
+          {/* Transportation Options */}
+          <h4 className="text-lg font-medium text-white mb-4">Transport Options</h4>
+          <div className="space-y-6">
+            {/* From Airport */}
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-teal-400">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h5 className="text-lg leading-6 font-medium text-white">From Airport</h5>
+                <p className="mt-2 text-sm text-gray-300">
+                  Approximately 30-35 km from Rajiv Gandhi International Airport (RGIA).
+                  The drive usually takes 40-60 minutes, depending on traffic conditions.
+                </p>
+              </div>
+            </div>
+
+            {/* From Railway Station */}
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-teal-400">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h5 className="text-lg leading-6 font-medium text-white">From Railway Station</h5>
+                <p className="mt-2 text-sm text-gray-300">
+                  About 20-25 km from Secunderabad Railway Station.
+                  Travel time is around 30-45 minutes by car.
+                </p>
+              </div>
+            </div>
+
+            {/* From Bus Station */}
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-teal-400">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h5 className="text-lg leading-6 font-medium text-white">From Bus Station</h5>
+                <p className="mt-2 text-sm text-gray-300">
+                  Around 25-30 km from main bus stations in Hyderabad, such as MGBS 
+                  (Mahatma Gandhi Bus Station) or Jubilee Bus Station.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+{/* Right column - Campus Image and Map - Redesigned */}
+<motion.div
+  initial={{ opacity: 0, x: 20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="h-full"
+>
+  <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 h-full flex flex-col">
+    {/* Campus View with integrated title and image */}
+    <div className="mb-6">
+      <h3 className="text-xl font-semibold mb-4 text-white flex items-center">
+        <svg className="w-5 h-5 mr-2 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+        </svg>
+        Campus View
+      </h3>
+      
+      {/* Campus Image with overlay caption */}
+      <div className="relative w-full h-64 rounded-lg overflow-hidden">
+        <Image 
+          src="/Summer-School-GenAI-MU/11.png"
+          alt="Mahindra University Campus" 
+          fill 
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 600px"
+        />
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent p-3">
+          <div className="text-sm font-medium text-white">Mahindra University, Hyderabad</div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Transportation Options in a card format */}
+    <div className="bg-gray-700/30 rounded-lg p-4 mb-4">
+      <h4 className="text-lg font-medium text-white mb-3 flex items-center">
+        <svg className="w-5 h-5 mr-2 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+          <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1v-1h3.05a2.5 2.5 0 014.9 0H19a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0017 5h-1V4a1 1 0 00-1-1H3z" />
+        </svg>
+        Recommended Transportation
+      </h4>
+      <ul className="space-y-2.5">
+        <li className="flex items-start">
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-500/20 flex items-center justify-center mr-2">
+            <svg className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
+            </svg>
+          </div>
+          <span className="text-gray-300">Cab services (Uber/Ola) are readily available throughout Hyderabad</span>
+        </li>
+        <li className="flex items-start">
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-500/20 flex items-center justify-center mr-2">
+            <svg className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
+            </svg>
+          </div>
+          <span className="text-gray-300">Pre-paid taxi services available at the airport and railway stations</span>
+        </li>
+        <li className="flex items-start">
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-500/20 flex items-center justify-center mr-2">
+            <svg className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
+            </svg>
+          </div>
+          <span className="text-gray-300">Local buses connect to nearby areas with additional transit required</span>
+        </li>
+      </ul>
+    </div>
+    
+    {/* Google Maps Link Button */}
+    <a 
+      href="https://g.co/kgs/jP4D4Eg" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center space-x-2 py-3 px-4 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors duration-300 mb-4"
+    >
+      <svg className="w-5 h-5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+      </svg>
+      <span>Open in Google Maps</span>
+    </a>
+    
+    {/* Contact Card */}
+    <div className="mt-auto p-4 bg-gray-700/30 rounded-lg border border-teal-500/20">
+      <div className="flex items-start">
+        <svg className="w-5 h-5 text-teal-400 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"></path>
+        </svg>
+        <div>
+          <p className="text-sm text-gray-300">Need assistance with transportation or accommodation?</p>
+          <a 
+            href="mailto:dipti.mishra@mahindrauniversity.edu.in" 
+            className="inline-flex items-center mt-2 text-teal-400 hover:text-teal-300 transition-colors text-sm"
+          >
+            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            Contact our event coordinator
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</motion.div>
+    </div>
+  </div>
+</section>  
+
 {/* Footer Section - Horizontal Contact Card */}
 <footer id="footer" className="bg-gray-800 border-t border-gray-700">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -774,6 +988,8 @@ export default function Home() {
     </div>
   </div>
 </footer>
+
+
     </main>
   );
 }
